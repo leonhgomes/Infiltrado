@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Infiltrado</string>
+    <string name="acertou">Acertou!</string>
+    <string name="aperte_tela">Aperte a tela</string>
+    <string name="aperte_tela_iniciar_tempo">Aperte a tela para iniciar a contagem do tempo</string>
+    <string name="aperte_tela_passe_aparelho">Aperte a tela e passe o aparelho para frente</string>
+    <string name="entre_com_a_palavra_secreta">Entre com a palavra secreta:</string>
+    <string name="fim">Fim</string>
+    <string name="jog">Jogá!</string>
+    <string name="jogador">Jogador</string>
+    <string name="jogador1">Jogador 1 = Toque na tela</string>
+    <string name="jogadores">Jogadores:</string>
+    <string name="nova">Nova</string>
+    <string name="pausar">Pausar</string>
+    <string name="qual_a_palavra_secreta_nperguntas_de_sim_ou_n_o_ao_narrador">Qual a palavra secreta? \nPerguntas de sim ou não ao narrador</string>
+    <string name="quem_eh_infiltrado">Quem é o infiltrado?  \nVotem primeiro no jogador que acertou a resposta</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="seguir">Seguir</string>
+    <string name="sugest_o">Sugestão</string>
+    <string name="tempo">Tempo:</string>
+    <string name="tempo_acabou">Tempo acabou!</string>
+    <string name="voce_eh_infiltrado">você é o INFILTRADO \nA palavra secreta é:</string>
+    <string name="voce_nao_eh_infiltrado">você NÃO é o infiltrado</string>
+    <string-array name="palavras">
+        <item>SEGREDO</item>
+        <item>AMOR</item>
+        <item>BUNDA</item>
+        <item>INTERNET</item>
+        <item>LUANA</item>
+        <item>SOLUÇO</item>
+        <item>RISADA</item>
+        <item>BANANA</item>
+        <item>HASHI</item>
+        <item>BOARD GAME</item>
+        <item>INFILTRADO</item>
+    </string-array>
+</resources>

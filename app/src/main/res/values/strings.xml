@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Infiltrator</string>
+    <string name="sugest_o">secret word</string>
+    <string name="entre_com_a_palavra_secreta">Guess the secret word:</string>
+    <string name="jogadores">Players:</string>
+    <string name="jog">Play!</string>
+    <string name="nova">New</string>
+    <string name="tempo">Time:</string>
+    <string name="acertou">Right answer!</string>
+    <string name="pausar">Pause</string>
+    <string name="qual_a_palavra_secreta_nperguntas_de_sim_ou_n_o_ao_narrador">Guess the secret word! \nYes or no questions to the narrator</string>
+    <string name="reiniciar">Restart</string>
+    <string name="quem_eh_infiltrado">Who is the infiltrator? \nFirst, vote the player that found the correct answer</string>
+    <string name="fim">End</string>
+    <string name="tempo_acabou">Time is over!</string>
+    <string name="seguir">Resume</string>
+    <string name="jogador1">Player 1 = Tap the screen</string>
+    <string name="jogador">Player</string>
+    <string name="voce_eh_infiltrado">you are the INFILTRATOR \nThe secret word is:</string>
+    <string name="voce_nao_eh_infiltrado">you are NOT the infiltrator</string>
+    <string name="aperte_tela_iniciar_tempo">Tap the screen to start the countdown</string>
+    <string name="aperte_tela_passe_aparelho">Tap the screen and pass your device</string>
+    <string name="aperte_tela">Tap the screen</string>
+    <string-array name="palavras">
+        <item>SECRET</item>
+        <item>LOVE</item>
+        <item>ASS</item>
+        <item>INTERNET</item>
+        <item>LUANA</item>
+        <item>HICCUP</item>
+        <item>LAUGH</item>
+        <item>BANANA</item>
+        <item>HASHI</item>
+        <item>BOARD GAME</item>
+        <item>INFILTRATOR</item>
+    </string-array>
+</resources>
