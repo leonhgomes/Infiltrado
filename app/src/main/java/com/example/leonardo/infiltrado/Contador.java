@@ -169,7 +169,7 @@ public class Contador extends AppCompatActivity {
             }
 
             if(piscar)
-                mensagem.setText("");
+                mensagem.setText("     ");
             else
                 mensagem.setText(String.format("%02d", min)+":"+String.format("%02d", seg));
 

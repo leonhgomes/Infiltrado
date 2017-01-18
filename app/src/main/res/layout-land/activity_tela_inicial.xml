@@ -10,14 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.leonardo.infiltrado.TelaInicial">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/entre_com_a_palavra_secreta"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="18sp"
-        android:id="@+id/text1" />
-
     <Button
         android:text="@string/nova"
         android:layout_width="wrap_content"
@@ -28,38 +20,22 @@
         android:layout_toRightOf="@+id/edit1"
         style="@style/Widget.AppCompat.Button.Small" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="text|textPersonName"
-        android:ems="10"
-        android:id="@+id/edit1"
-        android:hint="@string/sugest_o"
-        android:selectAllOnFocus="true"
-        android:layout_below="@+id/text1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:imeOptions="actionDone"
-        android:maxLines="1"
-        android:maxLength="40"
-        android:textColorLink="@android:color/holo_green_dark" />
-
     <Button
-        android:text="Eng"
+        android:text="En"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/english"
-        style="@style/Widget.AppCompat.Button.Small"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="PtBr"
+        android:text="Pt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/portugues"
-        style="@style/Widget.AppCompat.Button.Small"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/english"
         android:layout_toStartOf="@+id/english" />
@@ -79,16 +55,32 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <NumberPicker
-        android:id="@+id/np2"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/np1"
-        android:layout_alignLeft="@+id/text3"
-        android:layout_alignStart="@+id/text3"
-        android:scaleX="1.7"
-        android:scaleY="1.7"
-        android:layout_alignTop="@+id/np1" />
+        android:text="@string/entre_com_a_palavra_secreta"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        android:id="@+id/text1"
+        android:layout_below="@+id/joga"
+        android:layout_alignLeft="@+id/joga"
+        android:layout_alignStart="@+id/joga" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPersonName"
+        android:ems="10"
+        android:id="@+id/edit1"
+        android:hint="@string/sugest_o"
+        android:selectAllOnFocus="true"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:maxLength="40"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:layout_below="@+id/text1"
+        android:layout_alignLeft="@+id/text1"
+        android:layout_alignStart="@+id/text1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,20 +91,10 @@
         android:id="@+id/text3"
         android:layout_alignBaseline="@+id/text2"
         android:layout_alignBottom="@+id/text2"
-        android:layout_toLeftOf="@+id/renova_sugestao"
-        android:layout_toStartOf="@+id/renova_sugestao"
-        android:layout_marginRight="13dp"
-        android:layout_marginEnd="13dp" />
-
-    <NumberPicker
-        android:id="@+id/np1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleX="1.7"
-        android:scaleY="1.7"
-        android:layout_above="@+id/portugues"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/np2"
+        android:layout_alignStart="@+id/np2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -121,9 +103,31 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="18sp"
         android:id="@+id/text2"
-        android:layout_alignBaseline="@+id/joga"
-        android:layout_alignBottom="@+id/joga"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <NumberPicker
+        android:id="@+id/np1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/text2"
+        android:layout_alignEnd="@+id/text2" />
+
+    <NumberPicker
+        android:id="@+id/np2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_alignBaseline="@+id/np1"
+        android:layout_alignBottom="@+id/np1"
+        android:layout_toRightOf="@+id/np1"
+        android:layout_toEndOf="@+id/np1" />
 
 </RelativeLayout>
