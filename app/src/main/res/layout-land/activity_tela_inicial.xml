@@ -130,4 +130,22 @@
         android:layout_toRightOf="@+id/np1"
         android:layout_toEndOf="@+id/np1" />
 
+    <Switch
+        android:text="Mode:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:showText="true"
+        android:textOff=" Infiltrator "
+        android:textOn="Spyfall"
+        android:checked="false"
+        android:splitTrack="true"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColorLink="?attr/colorBackgroundFloating"
+        android:thumb="@android:drawable/screen_background_dark_transparent"
+        android:layout_below="@+id/renova_sugestao"
+        android:layout_alignLeft="@+id/edit1"
+        android:layout_alignStart="@+id/edit1" />
+
 </RelativeLayout>
