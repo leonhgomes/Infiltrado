@@ -52,6 +52,7 @@ public class Contador extends AppCompatActivity {
         outState.putBoolean("pausado",pausado);
         outState.putLong("tempo_restante",tempo_restante);
         outState.putInt("etapa",etapa);
+        contador.cancel();
 
     }
     @Override
