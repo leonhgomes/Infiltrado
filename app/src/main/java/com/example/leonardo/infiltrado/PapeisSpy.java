@@ -2,6 +2,8 @@ package com.example.leonardo.infiltrado;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.AudioManager;
+import android.media.ToneGenerator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -38,7 +40,6 @@ public class PapeisSpy extends AppCompatActivity {
             Random rand = new Random();
             secreto = 1 + rand.nextInt(num_jogadores);
             jogador = 1;
-
             String pre_lista[] = getResources().getStringArray(R.array.locais);
             papeisJogador = pre_lista[rand.nextInt(pre_lista.length)].split(";");
             local = papeisJogador[0];
@@ -76,8 +77,12 @@ public class PapeisSpy extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }
-                jogador++;
-                escrevaMensagens();
+                else {
+                    ToneGenerator toneG = new ToneGenerator(AudioManager.STREAM_ALARM, 50);
+                    toneG.startTone(ToneGenerator.TONE_SUP_PIP, 100);
+                    jogador++;
+                    escrevaMensagens();
+                }
             }
         });
     }
