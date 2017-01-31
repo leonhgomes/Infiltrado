@@ -14,7 +14,13 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ExpandableListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 public class ContadorSpy extends AppCompatActivity {
     private static int minutos;
@@ -24,6 +30,25 @@ public class ContadorSpy extends AppCompatActivity {
     private static CountDownTimer contador=null;
     public static long tempo_restante=-1;
     private static boolean pausado;
+    private ExpandableListView listView;
+    private ExpandableListAdapter listAdapter;
+    private List<String> listDataHeader;
+    private HashMap<String,List<String>> listHash;
+
+    private void initData() {
+
+        String pre_lista[] = getResources().getStringArray(R.array.locais);
+        listDataHeader = new ArrayList<>();
+        listHash = new HashMap<>();
+        String func[];
+        for (int i = 0; i < pre_lista.length; i++) {
+            func=pre_lista[i].split(";");
+            listDataHeader.add(func[0]);
+
+            listHash.put(listDataHeader.get(i), Arrays.asList(Arrays.copyOfRange(func, 1, func.length)));
+        }
+    }
+
 
     @Override
     public void onBackPressed()
@@ -36,6 +61,15 @@ public class ContadorSpy extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contador_spy);
+
+
+
+        listView = (ExpandableListView)findViewById(R.id.localidades);
+        initData();
+        listAdapter = new ExpandableListAdapter(this,listDataHeader,listHash);
+        listView.setAdapter(listAdapter);
+
+
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         reiniciar = (Button) findViewById(R.id.reiniciar);
