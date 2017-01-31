@@ -20,8 +20,11 @@
     <string name="sugest_o">Sugestão</string>
     <string name="tempo">Tempo:</string>
     <string name="tempo_acabou">Tempo acabou!</string>
+    <string name="local">Lugares</string>
+    <string name="infil"> Infiltrado </string>
     <string name="voce_eh_infiltrado">você é o INFILTRADO \nA palavra secreta é:</string>
     <string name="voce_nao_eh_infiltrado">você NÃO é o infiltrado</string>
+    <string name="modo">Modo: </string>
     <string-array name="palavras">
         <item>SEGREDO</item>
         <item>AMOR</item>
@@ -35,4 +38,43 @@
         <item>BOARD GAME</item>
         <item>INFILTRADO</item>
     </string-array>
+    <string-array name="locais">
+        <item>Hospital;Médico;Enfermeira;Paciente;Cirurgião;Terapeuta;Anestesista;Residente;Ginecologista</item>
+        <item>Universidade;Professor;Estudante;Doutorando;Zelador;Coordenador;Reitor;Pesquisador;Monitor</item>
+        <item>Submarino;Cozinheiro;Comandante;Técnico do Sonar; Técnico eletrônico;Marinheiro;Operado de rádio;Piloto;Técnico de armas</item>
+        <item>Super Mercado;Caixa;Consumidor;Gerente;Açougueiro;Empacotador;Segurança;Zelador;Demonstrador de comida</item>
+        <item>Estação espacial;Engenheiro;Astronauta;Alien;Turista espacial;Cientista;Médico;Comandante;Piloto</item>
+        <item>Oficina Mecânica;Mecânico;Especialista em pneus;Motoqueiro;Dono do carro;Operador do lava-jato;Eletricista;Gerente;Técnico de som</item>
+        <item>Circo;Palhaço;Comedor de fogo;Acrobata;Malabarista;Mágico;Espectador;Treinador de animais;Apresentador</item>
+        <item>Catedral;Padre;Pedinte;Pecador;Turista;Cantor do coral;Freira;Coroinha;Bispo</item>
+        <item>Navio Pirata;Cozinheiro;Marujo;Escravo;Capitão;Canhoneiro;Prisioneiro;Imediato;Garoto camareiro</item>
+        <item>Praia;Salva Vidas;Praista;Ladrão;Surfista;Piloto de Jetski;Pescador;Vendedor ambulante;Sorveteiro</item>
+        <item>Delegacia;Detetive;Policial;Jornalista;Criminoso;Advogado;Escrivão;Investigador;Delegado</item>
+        <item>Vila do Chaves;Chaves;Dona Clotilde;Seu Barriga;Quico;Chiquinha;Seu Madruga;Dona Florinda;Professor Girafales</item>
+        <item>QG dos Vingadores;Homem Aranha;Thor;Hulk;Homem de ferro;Viúva Negra;Capitão América;Gavião Arqueiro;Nick Furry</item>
+        <item>Estádio de Futebol;Atacante;Goleiro;Zagueiro;Massagista;Torcedor;Técnico;Juiz;Bandeirinha</item>
+        <item>Avião;Passageiro da primeira classe;Comandante;Co-piloto;Comissário de bordo;Passageiro Classe econômica;Mecânico;Técnico de voo;Estudante de aviação</item>
+        <item>Monte Olímpo;Zeus;Hera;Afrodite;Apollo;Hermes;Poseidon;Athena;Ares</item>
+        <item>Casino;Apostador;Barista;Gerente;Croupier;Chefe de Segurança;Leão de Chácara;Garçonete;Animador</item>
+        <item>Restaurante;Músico;Cliente;Crítico culinário;Chefe;Gerente;Garçom;Barista;Auxiliar de limpeza</item>
+        <item>Embaixada;Chefe de segurança;Secretária;Embaixador;Oficial do governo;Turista;Refugiado;Diplomata;Imigrante</item>
+        <item>Tropa de cruzados medievais;Monge;Bispo;Arqueiro;Cavaleiro;Prisioneiro;Escudeiro;Servo;Mercenário</item>
+        <item>Teatro;Ator;Diretor;Visitante;Caixa;Técnico de iluminação;Técnico de som;Crítico de arte;Maquiador</item>
+        <item>Parada LGBT;Fotógrafo;Jornalista;Turista;Dançarino;Músico;Segurança;Manifestante homofóbico;Organizador</item>
+        <item>Creche;Professor;Diretor;Zelador;Cozinheiro;Criança;Bebê;Funcionário do Berçário;Mãe</item>
+        <item>Estúdio de cinema;Diretor;Ator;Dublê;Operador de camera;Produtor;Engenheiro de som;Maquiador;Técnico de iluminação</item>
+        <item>Base Militar;Coronel;Soldado;Médico;Oficial;Franco atirador;Desertor;Sargento;Técnico de tanques</item>
+        <item>Ônibus;Motorista;Cobrador;Pedinte;Vendedor de balas;Passageiro;Ladrão;Mecânico;Idoso</item>
+        <item>Spa de beleza;Cliente;Massagista;Dermatologista;Esteticista;Cabeleireiro;Manicure;Maquiadora;Depiladora</item>
+        <item>Estação Polar;Geólogo;Médico;Líder de expedição;Biólogo;Meteorologista;Técnico de rádio;Técnico Hidrólogo;Cientista</item>
+        <!--<item>Festival de Anime;Cosplayer;Turista;Vendedor;Cozinheiro;Atendente;Segurança;Músicos;Dançarino</item>-->
+    </string-array>
+    <string name="funcao">Função: </string>
+    <string name="lugar">Lugar: </string>
+    <string name="pressione">Aperte e segure para revelar</string>
+    <string name="voceEspiao">Você é o INFILTRADO</string>
+    <string name="ultimo">1-Verifique seu papel abaixo\n1-Aperte aqui para iniciar o jogo</string>
+    <string name="verifique">Veja seu papel e depois toque aqui</string>
+    <string name="encontre">Encontre o Infiltrado</string>
+
 </resources>

@@ -21,6 +21,17 @@
     <string name="aperte_tela_iniciar_tempo">Tap the screen to start the countdown</string>
     <string name="aperte_tela_passe_aparelho">Tap the screen and pass your device</string>
     <string name="aperte_tela">Tap the screen</string>
+    <string name="local">Location</string>
+    <string name="infil"> Infiltrator </string>
+    <string name="spy">Spyfall</string>
+    <string name="modo">Mode: </string>
+    <string name="pressione">Press and hold to reveal</string>
+    <string name="voceEspiao">You are the SPY</string>
+    <string name="lugar">"Place: "</string>
+    <string name="funcao">Role: </string>
+    <string name="verifique">Verify your role below and tap here</string>
+    <string name="ultimo">1-Verify your role below\n2-Tap here to start the game</string>
+    <string name="encontre">Find the Infiltrator</string>
     <string-array name="palavras">
         <item>SECRET</item>
         <item>LOVE</item>
@@ -33,5 +44,36 @@
         <item>HASHI</item>
         <item>BOARD GAME</item>
         <item>INFILTRATOR</item>
+    </string-array>
+    <string-array name="locais">
+        <item>Hospital;Médico;Enfermeira;Paciente;Cirurgião;Terapeuta;Anestesista;Residente;Ginecologista</item>
+        <item>Universidade;Professor;Estudante;Doutorando;Zelador;Coordenador;Reitor;Pesquisador;Monitor</item>
+        <item>Submarino;Cozinheiro;Comandante;Técnico do Sonar; Técnico eletrônico;Marinheiro;Operado de rádio;Piloto;Técnico de armas</item>
+        <item>Super Mercado;Caixa;Consumidor;Gerente;Açougueiro;Empacotador;Segurança;Zelador;Demonstrador de comida</item>
+        <item>Estação espacial;Engenheiro;Astronauta;Alien;Turista espacial;Cientista;Médico;Comandante;Piloto</item>
+        <item>Oficina Mecânica;Mecânico;Especialista em pneus;Motoqueiro;Dono do carro;Operador do lava-jato;Eletricista;Gerente;Técnico de som</item>
+        <item>Circo;Palhaço;Comedor de fogo;Acrobata;Malabarista;Mágico;Espectador;Treinador de animais;Apresentador</item>
+        <item>Catedral;Padre;Pedinte;Pecador;Turista;Cantor do coral;Freira;Coroinha;Bispo</item>
+        <item>Navio Pirata;Cozinheiro;Marujo;Escravo;Capitão;Canhoneiro;Prisioneiro;Imediato;Garoto camareiro</item>
+        <item>Praia;Salva Vidas;Praista;Ladrão;Surfista;Piloto de Jetski;Pescador;Vendedor ambulante;Sorveteiro</item>
+        <item>Delegacia;Detetive;Policial;Jornalista;Criminoso;Advogado;Escrivão;Investigador;Delegado</item>
+        <item>Vila do Chaves;Chaves;Dona Clotilde;Seu Barriga;Quico;Chiquinha;Seu Madruga;Dona Florinda;Professor Girafales</item>
+        <item>QG dos Vingadores;Homem Aranha;Thor;Hulk;Homem de ferro;Viúva Negra;Capitão América;Gavião Arqueiro;Nick Furry</item>
+        <item>Estádio de Futebol;Atacante;Goleiro;Zagueiro;Massagista;Torcedor;Técnico;Juiz;Bandeirinha</item>
+        <item>Avião;Passageiro da primeira classe;Comandante;Co-piloto;Comissário de bordo;Passageiro Classe econômica;Mecânico;Técnico de voo;Estudante de aviação</item>
+        <item>Monte Olímpo;Zeus;Hera;Afrodite;Apollo;Hermes;Poseidon;Athena;Ares</item>
+        <item>Casino;Apostador;Barista;Gerente;Croupier;Chefe de Segurança;Leão de Chácara;Garçonete;Animador</item>
+        <item>Restaurante;Músico;Cliente;Crítico culinário;Chefe;Gerente;Garçom;Barista;Auxiliar de limpeza</item>
+        <item>Embaixada;Chefe de segurança;Secretária;Embaixador;Oficial do governo;Turista;Refugiado;Diplomata;Imigrante</item>
+        <item>Tropa de cruzados medievais;Monge;Bispo;Arqueiro;Cavaleiro;Prisioneiro;Escudeiro;Servo;Mercenário</item>
+        <item>Teatro;Ator;Diretor;Visitante;Caixa;Técnico de iluminação;Técnico de som;Crítico de arte;Maquiador</item>
+        <item>Parada LGBT;Fotógrafo;Jornalista;Turista;Dançarino;Músico;Segurança;Manifestante homofóbico;Organizador</item>
+        <item>Creche;Professor;Diretor;Zelador;Cozinheiro;Criança;Bebê;Funcionário do Berçário;Mãe</item>
+        <item>Estúdio de cinema;Diretor;Ator;Dublê;Operador de camera;Produtor;Engenheiro de som;Maquiador;Técnico de iluminação</item>
+        <item>Base Militar;Coronel;Soldado;Médico;Oficial;Franco atirador;Desertor;Sargento;Técnico de tanques</item>
+        <item>Ônibus;Motorista;Cobrador;Pedinte;Vendedor de balas;Passageiro;Ladrão;Mecânico;Idoso</item>
+        <item>Spa de beleza;Cliente;Massagista;Dermatologista;Esteticista;Cabeleireiro;Manicure;Maquiadora;Depiladora</item>
+        <item>Estação Polar;Geólogo;Médico;Líder de expedição;Biólogo;Meteorologista;Técnico de rádio;Técnico Hidrólogo;Cientista</item>
+        <!--<item>Festival de Anime;Cosplayer;Turista;Vendedor;Cozinheiro;Atendente;Segurança;Músicos;Dançarino</item>-->
     </string-array>
 </resources>

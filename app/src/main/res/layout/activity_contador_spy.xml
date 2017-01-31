@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contador"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.leonardo.infiltrado.Contador">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/mensagem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="20:11"
+        android:textSize="@dimen/fonte" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mensagem2"
+        android:textSize="18sp"
+        android:text="@string/encontre"
+        android:textAlignment="center"
+        android:layout_below="@+id/fim"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/reiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reiniciar"
+        android:layout_below="@+id/mensagem"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_blue_dark" />
+
+    <Button
+        android:text="@string/fim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fim"
+        android:layout_alignBaseline="@+id/reiniciar"
+        android:layout_alignBottom="@+id/reiniciar"
+        android:layout_toRightOf="@+id/reiniciar"
+        android:layout_toEndOf="@+id/reiniciar"
+        android:backgroundTint="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="@string/pausar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pausar"
+        android:layout_alignBaseline="@+id/reiniciar"
+        android:layout_alignBottom="@+id/reiniciar"
+        android:layout_toLeftOf="@+id/reiniciar"
+        android:layout_toStartOf="@+id/reiniciar"
+        android:backgroundTint="@color/colorPrimaryDark" />
+
+</RelativeLayout>

@@ -3,7 +3,7 @@
     package="com.example.leonardo.infiltrado">
 
     <application
-        android:name="MyApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Papeis" />
-        <activity android:name=".Contador"></activity>
+        <activity android:name=".Contador" />
+        <activity android:name=".Locais" />
+        <activity android:name=".PapeisSpy" />
+        <activity android:name=".ContadorSpy"></activity>
     </application>
 
 </manifest>

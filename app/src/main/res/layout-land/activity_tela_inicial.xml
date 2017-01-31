@@ -8,50 +8,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
     tools:context="com.example.leonardo.infiltrado.TelaInicial">
 
     <Button
-        android:text="@string/nova"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/renova_sugestao"
-        android:textSize="12sp"
-        android:layout_alignTop="@+id/edit1"
-        android:layout_toRightOf="@+id/edit1"
-        style="@style/Widget.AppCompat.Button.Small" />
-
-    <Button
-        android:text="En"
+        android:text="Pt-En"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/english"
         style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:text="Pt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/portugues"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/english"
-        android:layout_toStartOf="@+id/english" />
-
-    <Button
-        android:text="@string/jog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/joga"
-        android:textStyle="normal|bold|italic"
-        android:lineSpacingExtra="10sp"
-        android:textSize="90sp"
-        android:fontFamily="sans-serif"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:textColor="@android:color/holo_green_dark"
-        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -65,22 +31,6 @@
         android:layout_below="@+id/joga"
         android:layout_alignLeft="@+id/joga"
         android:layout_alignStart="@+id/joga" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="text|textPersonName"
-        android:ems="10"
-        android:id="@+id/edit1"
-        android:hint="@string/sugest_o"
-        android:selectAllOnFocus="true"
-        android:imeOptions="actionDone"
-        android:maxLines="1"
-        android:maxLength="40"
-        android:textColorLink="@android:color/holo_green_dark"
-        android:layout_below="@+id/text1"
-        android:layout_alignLeft="@+id/text1"
-        android:layout_alignStart="@+id/text1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -120,24 +70,6 @@
         android:layout_toRightOf="@+id/np1"
         android:layout_toEndOf="@+id/np1" />
 
-    <Switch
-        android:text="Mode:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/switch1"
-        android:showText="true"
-        android:textOff=" Infiltrator "
-        android:textOn="Spyfall"
-        android:checked="false"
-        android:splitTrack="true"
-        android:fontFamily="sans-serif"
-        android:textSize="20sp"
-        android:textColorLink="?attr/colorBackgroundFloating"
-        android:thumb="@android:drawable/screen_background_dark_transparent"
-        android:layout_below="@+id/renova_sugestao"
-        android:layout_alignLeft="@+id/edit1"
-        android:layout_alignStart="@+id/edit1" />
-
     <NumberPicker
         android:id="@+id/np1"
         android:layout_width="wrap_content"
@@ -147,5 +79,74 @@
         android:layout_centerVertical="true"
         android:layout_alignRight="@+id/text2"
         android:layout_alignEnd="@+id/text2" />
+
+    <Switch
+        android:text="@string/modo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infSpy"
+        android:showText="true"
+        android:textOff="@string/infil"
+        android:textOn="@string/spy"
+        android:checked="false"
+        android:splitTrack="true"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColorLink="?attr/colorBackgroundFloating"
+        android:thumb="@android:drawable/screen_background_dark_transparent"
+        android:layout_above="@+id/english"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/jog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/joga"
+        android:textStyle="normal|bold|italic"
+        android:lineSpacingExtra="10sp"
+        android:textSize="100sp"
+        android:fontFamily="sans-serif"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/nova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/renova_sugestao"
+        android:textSize="12sp"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignBottom="@+id/edit1"
+        android:layout_toEndOf="@+id/edit1" />
+
+    <Button
+        android:text="@string/local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listaLocais"
+        android:visibility="invisible"
+        android:layout_below="@+id/joga"
+        android:layout_alignLeft="@+id/text1"
+        android:layout_alignStart="@+id/text1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPersonName"
+        android:ems="10"
+        android:id="@+id/edit1"
+        android:hint="@string/sugest_o"
+        android:selectAllOnFocus="true"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:layout_below="@+id/text1"
+        android:layout_alignLeft="@+id/text1"
+        android:layout_alignStart="@+id/text1" />
 
 </RelativeLayout>

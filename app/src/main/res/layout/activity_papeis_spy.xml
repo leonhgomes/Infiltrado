@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_papeis_spy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leonardo.infiltrado.PapeisSpy"
+    android:rowCount="3"
+    android:columnCount="1">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:id="@+id/mensagemTop"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_gravity="fill_vertical|fill_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="2"
+        android:gravity="center"
+        android:id="@+id/mensagemBot"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_gravity="fill_vertical|fill_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+</GridLayout>

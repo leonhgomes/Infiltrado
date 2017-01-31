@@ -3,4 +3,14 @@
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
+    <array name="cores">
+        <item>#00930b</item>
+        <item>#cc0000</item>
+        <item>#a49c00</item>
+        <item>#0024af</item>
+        <item>#b40029</item>
+        <item>#5ba600</item>
+        <item>#00b3af</item>
+        <item>#7300b4</item>
+    </array>
 </resources>

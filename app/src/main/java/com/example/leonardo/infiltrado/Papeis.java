@@ -1,17 +1,12 @@
 package com.example.leonardo.infiltrado;
 
 import android.content.Intent;
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Papeis extends AppCompatActivity {
 
@@ -79,6 +74,7 @@ public class Papeis extends AppCompatActivity {
                         intent.putExtra("jogadores", num_jogadores);
                         intent.putExtra("minutos", minutos);
                         intent.putExtra("palavra", palavra);
+                        Contador.tempo_restante=-1;
                         startActivity(intent);
                         finish();
                         fim=true;

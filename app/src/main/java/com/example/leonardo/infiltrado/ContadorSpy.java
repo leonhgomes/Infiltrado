@@ -1,17 +1,22 @@
 package com.example.leonardo.infiltrado;
 
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.RelativeSizeSpan;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
-public class Contador extends AppCompatActivity {
+public class ContadorSpy extends AppCompatActivity {
     private static int minutos;
     private static Button pausar,reiniciar,fim;
     private static TextView mensagem;
@@ -19,8 +24,6 @@ public class Contador extends AppCompatActivity {
     private static CountDownTimer contador=null;
     public static long tempo_restante=-1;
     private static boolean pausado;
-    private static int etapa;
-
 
     @Override
     public void onBackPressed()
@@ -32,7 +35,8 @@ public class Contador extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contador);
+        setContentView(R.layout.activity_contador_spy);
+
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         reiniciar = (Button) findViewById(R.id.reiniciar);
         fim = (Button) findViewById(R.id.fim);
@@ -41,7 +45,6 @@ public class Contador extends AppCompatActivity {
         pausar = (Button) findViewById(R.id.pausar);
         if(tempo_restante==-1) {
             pausado=false;
-            etapa=1;
             minutos = getIntent().getIntExtra("minutos", 1);
             tempo_restante=minutos*60000+999;
 
@@ -93,20 +96,8 @@ public class Contador extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-
-            contador.cancel();
-            if(etapa==1){
-                etapa++;
-                pausado=false;
-                pausar.setText(R.string.pausar);
-                mensagem2.setText(R.string.quem_eh_infiltrado);
-                fim.setText(R.string.fim);
-                tempo_restante=minutos*60000+999;
-                contador = new CountDownTimerClass(tempo_restante, 1000);
-                contador.start();
-            }
-            else
-                finish();
+             contador.cancel();
+             finish();
             }
         });
 
